@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "fc79079a-9e4b-4de4-a028-737717481846",
+		"name": "goBookstore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5033902"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9011/book/",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"book",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9011/book/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"book",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"The Subtle Art of Televiones!\",\r\n    \"Author\" : \"Televiones ?\",\r\n    \"Publication\" : \"Guess so..\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9011/book/",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"book",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"The Subtle Art of Televiones... but did\",\r\n    \"Author\" : \"Seriously\",\r\n    \"Publication\" : \"named your book like that?\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9011/book/2",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"book",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9011/book/2",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"book",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
